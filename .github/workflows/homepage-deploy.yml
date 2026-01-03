@@ -9,6 +9,7 @@ on:
     branches: [main]
     paths:
       - 'homepage/**'
+      - '.github/workflows/homepage-deploy.yml'
 
   # 允许你从 Actions 选项卡手动运行此工作流程
   workflow_dispatch:
@@ -43,11 +44,14 @@ jobs:
         with:
           node-version: 22
           cache: pnpm # npm # 或 pnpm / yarn
+          cache-dependency-path: homepage/pnpm-lock.yaml
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
+        working-directory: homepage
         run: pnpm install # npm ci # 或 pnpm install / yarn install / bun install
       - name: Build with VitePress
+        working-directory: homepage
         run: pnpm build # npm run build # 或 pnpm build / yarn build / bun run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
