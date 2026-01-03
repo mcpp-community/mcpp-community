@@ -806,7 +806,8 @@ onUnmounted(() => {
 
   .member-card {
     padding: 20px;
-    min-height: 380px;
+    height: 450px;
+    box-sizing: border-box;
   }
 
   .card-header {
@@ -822,6 +823,11 @@ onUnmounted(() => {
 
   .member-name {
     font-size: 1.5rem;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 </style>
