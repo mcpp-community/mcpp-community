@@ -43,16 +43,14 @@ hero:
       sponsor: 'https://github.com/FrozenLemonTee'
     },
     {
-      name: '欢迎加入',
-      avatar: 'mcpp-logo.png',
-      bio: '快来加入我们吧...',
+      name: 'MoYingJi',
+      avatar: 'https://avatars.githubusercontent.com/u/64307394',
+      bio: '摸鱼怪兼邪教徒',
       projects: [
-        { name: 'd2mcpp - 交互式现代C++入门教程', link: 'https://github.com/mcpp-community/d2mcpp' },
         { name: 'mcpplibs - 现代C++库集合', link: 'https://github.com/mcpplibs' },
       ],
-      github: 'https://github.com/mcpp-community',
-      bilibili: 'https://space.bilibili.com/3493107582633996',
-      sponsor: 'https://github.com/mcpp-community'
+      github: 'https://github.com/MoYingJi',
+      bilibili: 'https://space.bilibili.com/591913409'
     },
     {
       name: '欢迎加入',
