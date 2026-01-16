@@ -17,7 +17,7 @@ const historyEvents = [
   },
   {
     time: '2026-01-10',
-    description: 'CT-002加入, 社区团队(3人), 进行第0次线上双周会',
+    description: 'CT-002加入, 社区团队(3人)进行第0次线上双周会',
   },
   {
     time: '2026-01-05',
