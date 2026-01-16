@@ -26,15 +26,10 @@
         @mouseleave="onCardLeave"
       >
         <Transition name="fade" mode="out-in">
-          <div 
+          <HoverCard 
             v-if="selectedMember" 
             :key="selectedIndex" 
             class="member-card"
-            :class="{ 'card-hover': isCardHovered }"
-            :style="cardTransformStyle"
-            @mousemove="onCardMouseMove"
-            @mouseenter="isCardHovered = true"
-            @mouseleave="onCardMouseLeave"
           >
             <a
               v-if="selectedMember.sponsor"
@@ -158,7 +153,7 @@
                 </a>
               </div>
             </div>
-          </div>
+          </HoverCard>
         </Transition>
       </div>
 
@@ -199,6 +194,7 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue'
+import HoverCard from './HoverCard.vue'
 
 interface TeamMember {
   name: string
@@ -221,9 +217,6 @@ const props = defineProps<{
 
 const selectedIndex = ref(0)
 const isUserInteracting = ref(false)
-const isCardHovered = ref(false)
-const cardMouseX = ref(0)
-const cardMouseY = ref(0)
 const activeTeam = ref<'core' | 'v'>('core')
 let autoSwitchTimer: number | null = null
 let hoverDelayTimer: number | null = null
@@ -239,21 +232,6 @@ const switchTeam = (team: 'core' | 'v') => {
     resetAutoSwitch()
   }
 }
-
-// 卡片受力变换样式
-const cardTransformStyle = computed(() => {
-  if (!isCardHovered.value) return {}
-  
-  // 计算鼠标相对于卡片中心的偏移量（-1 到 1）
-  const rotateX = cardMouseY.value * -8  // 上下旋转
-  const rotateY = cardMouseX.value * 8   // 左右旋转
-  const translateZ = 8 // 向上抬起
-  
-  return {
-    transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(${translateZ}px)`,
-    transition: 'transform 0.1s ease-out'
-  }
-})
 
 // 计算选中头像的行列位置
 const selectedPosition = computed(() => {
@@ -315,21 +293,6 @@ const onCardLeave = () => {
   // 鼠标离开卡片区域，恢复自动切换
   isUserInteracting.value = false
   startAutoSwitch()
-}
-
-const onCardMouseMove = (event: MouseEvent) => {
-  const card = event.currentTarget as HTMLElement
-  const rect = card.getBoundingClientRect()
-  
-  // 计算鼠标相对于卡片中心的位置（-1 到 1）
-  cardMouseX.value = (event.clientX - rect.left - rect.width / 2) / (rect.width / 2)
-  cardMouseY.value = (event.clientY - rect.top - rect.height / 2) / (rect.height / 2)
-}
-
-const onCardMouseLeave = () => {
-  isCardHovered.value = false
-  cardMouseX.value = 0
-  cardMouseY.value = 0
 }
 
 const randomSwitch = () => {
@@ -561,8 +524,6 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   position: relative;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  transform-style: preserve-3d;
   overflow: visible;
 }
 
