@@ -83,17 +83,17 @@ const processedEvents = computed(() => {
     
     if (/^\d{4}$/.test(time)) {
       type = 'year'
-      sortKey = time + '-12-31'
+      sortKey = time + '-99-99-2'
       userYears.add(time)
     } else if (/^\d{4}-\d{2}$/.test(time)) {
       type = 'month'
-      sortKey = time + '-31'
+      sortKey = time + '-99-1'
       userMonths.add(time)
       const year = time.substring(0, 4)
       if (!yearsWithEvents.has(year)) yearsWithEvents.set(year, [])
     } else if (/^\d{4}-\d{2}-\d{2}$/.test(time)) {
       type = 'day'
-      sortKey = time
+      sortKey = time + '-0'
       const year = time.substring(0, 4)
       const month = time.substring(0, 7)
       
@@ -102,7 +102,7 @@ const processedEvents = computed(() => {
       monthsWithEvents.get(month)!.push(time)
     } else {
       type = 'day'
-      sortKey = time
+      sortKey = time + '-0'
     }
 
     const isCurrent = sortKey === todayDate
@@ -126,7 +126,7 @@ const processedEvents = computed(() => {
       time: todayDate,
       description: '',
       type: 'day',
-      sortKey: todayDate,
+      sortKey: todayDate + '-0',
       isGenerated: false,
       isCurrent: true
     })
@@ -152,7 +152,7 @@ const processedEvents = computed(() => {
         type: 'year',
         time: year,
         description: year + ' 年',
-        sortKey: year + '-12-31',
+        sortKey: year + '-99-99-2',
         isGenerated: true
       })
     }
@@ -166,7 +166,7 @@ const processedEvents = computed(() => {
         type: 'month',
         time: `${year}年${monthNum}月`,
         description: `${year}年${monthNum}月`,
-        sortKey: month + '-31',
+        sortKey: month + '-99-1',
         isGenerated: true
       })
     }
