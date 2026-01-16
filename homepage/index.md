@@ -6,15 +6,48 @@ hero:
   text: "现代C++爱好者社区"
   tagline: 现代C++库开发维护、开源文化、技术交流
   actions:
+    - theme: brand 
+      text: 👥 了解社区 -> 
+      link: /docs/base/intro.md
     - theme: alt
       text: 🐙 Github
       link: https://github.com/mcpp-community
     - theme: alt
       text: 💬 论坛
       link: https://forum.d2learn.org/category/20
+    - theme: sponsor
+      text: ❤️ sponsor
+      link: /pages/sponsor.md
 ---
 
-<CoreTeam 
+<ProjectsShowcase
+  :projects="[
+    {
+      name: 'd2mcpp',
+      description: '交互式现代C++入门教程, 现代C++特性与发展历程',
+      link: 'https://github.com/mcpp-community/d2mcpp',
+      tags: ['交互式', 'D2X', '教程'],
+      status: 'active',
+      highlight: true
+    },
+    {
+      name: 'llmapi',
+      description: 'C++ LLM/AI API 客户端，简化 OpenAI 等接口调用与模型集成',
+      link: 'https://github.com/mcpplibs/llmapi',
+      tags: ['mcpplibs', 'llm api', 'C++23', '跨平台'],
+      status: 'wip'
+    },
+    {
+      name: 'mcpp-community',
+      description: '社区官网与内容建设，展示项目、团队和最新动态',
+      link: 'https://github.com/mcpp-community/mcpp-community',
+      tags: ['Docs', '社区', '展示'],
+      status: 'incubating'
+    }
+  ]"
+/>
+
+<TeamShowcase 
   :coreTeam="[
     {
       name: 'Sunrisepeak',
@@ -196,4 +229,8 @@ hero:
       sponsor: 'https://github.com/mcpp-community'
     }
   ]"
+/>
+
+<ContributorsWall 
+  imageUrl="https://raw.githubusercontent.com/mcpp-community/.github/refs/heads/main/.thanks-contributors/contributors.png"
 />
