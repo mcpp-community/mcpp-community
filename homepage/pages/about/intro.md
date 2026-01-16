@@ -8,7 +8,7 @@ layout: page
     <p class="intro-text">一个现代C++爱好者和相关技术、文化、交流的社区</p>
     <p class="intro-text">模块化库开发、技术传播、社区文化</p>
     <div class="intro-actions">
-      <a class="cta-button" href="/docs/base/join.md" target="_blank" rel="noreferrer">加入社区</a>
+      <a class="cta-button" href="/docs/base/join.html" target="_blank" rel="noreferrer">加入社区</a>
       <a class="cta-button" href="/forum" target="_blank" rel="noreferrer">参与讨论</a>
       <a class="cta-button" href="/pages/projects.html" target="_blank" rel="noreferrer">浏览项目</a>
     </div>
