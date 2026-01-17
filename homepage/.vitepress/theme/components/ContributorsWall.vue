@@ -6,74 +6,28 @@
       <p class="section-desc">感谢所有为社区做出贡献的开发者、捐赠者、以及运营和维护人员</p>
     </div>
 
-    <div 
+    <HoverCard
       ref="cardRef"
       class="contributors-card"
-      :style="cardTransformStyle"
-      @mouseenter="onMouseEnter"
-      @mouseleave="onMouseLeave"
-      @mousemove="onMouseMove"
     >
       <div class="card-glow"></div>
       <div class="card-border"></div>
-      <img 
-        :src="imageUrl" 
+      <img
+        :src="imageUrl"
         alt="Community Contributors"
         class="contributors-image"
         loading="lazy"
       />
-    </div>
+    </HoverCard>
   </section>
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import HoverCard from "./UI/HoverCard.vue"
 
-const props = defineProps<{
+defineProps<{
   imageUrl: string
 }>()
-
-const cardRef = ref<HTMLElement | null>(null)
-const isHovered = ref(false)
-const mouseX = ref(0)
-const mouseY = ref(0)
-
-// 3D 重力卡片变换效果
-const cardTransformStyle = computed(() => {
-  if (!isHovered.value) {
-    return {
-      transform: 'perspective(1200px) rotateX(0deg) rotateY(0deg) translateZ(0px)',
-      transition: 'transform 0.5s cubic-bezier(0.23, 1, 0.32, 1)'
-    }
-  }
-  
-  const rotateX = mouseY.value * -10
-  const rotateY = mouseX.value * 10
-  const translateZ = 20
-  
-  return {
-    transform: `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(${translateZ}px)`,
-    transition: 'transform 0.1s ease-out'
-  }
-})
-
-const onMouseEnter = () => {
-  isHovered.value = true
-}
-
-const onMouseLeave = () => {
-  isHovered.value = false
-  mouseX.value = 0
-  mouseY.value = 0
-}
-
-const onMouseMove = (event: MouseEvent) => {
-  if (!cardRef.value) return
-  
-  const rect = cardRef.value.getBoundingClientRect()
-  mouseX.value = (event.clientX - rect.left - rect.width / 2) / (rect.width / 2)
-  mouseY.value = (event.clientY - rect.top - rect.height / 2) / (rect.height / 2)
-}
 </script>
 
 <style scoped>
@@ -92,7 +46,7 @@ const onMouseMove = (event: MouseEvent) => {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 12px;
+  padding: 6px 14px;
   border-radius: 999px;
   background: rgba(var(--vp-c-brand-1-rgb, 66, 184, 131), 0.12);
   color: var(--vp-c-brand-1);
@@ -127,14 +81,14 @@ const onMouseMove = (event: MouseEvent) => {
   transform-style: preserve-3d;
   cursor: pointer;
   background: var(--vp-c-bg-soft);
-  box-shadow: 
+  box-shadow:
     0 10px 40px rgba(0, 0, 0, 0.12),
     0 2px 8px rgba(0, 0, 0, 0.08);
   transition: box-shadow 0.3s ease;
 }
 
 .contributors-card:hover {
-  box-shadow: 
+  box-shadow:
     0 20px 60px rgba(0, 0, 0, 0.18),
     0 4px 16px rgba(0, 0, 0, 0.12);
 }
@@ -143,18 +97,18 @@ const onMouseMove = (event: MouseEvent) => {
   position: absolute;
   inset: -2px;
   background: radial-gradient(
-      circle at 20% 30%, 
-      rgba(66, 184, 131, 0.3), 
+      circle at 20% 30%,
+      rgba(66, 184, 131, 0.3),
       transparent 50%
     ),
     radial-gradient(
-      circle at 80% 70%, 
-      rgba(52, 168, 250, 0.3), 
+      circle at 80% 70%,
+      rgba(52, 168, 250, 0.3),
       transparent 50%
     ),
     linear-gradient(
-      135deg, 
-      rgba(66, 184, 131, 0.25), 
+      135deg,
+      rgba(66, 184, 131, 0.25),
       rgba(159, 122, 234, 0.25)
     );
   opacity: 0;
@@ -174,12 +128,12 @@ const onMouseMove = (event: MouseEvent) => {
   border-radius: 20px;
   border: 2px solid transparent;
   background: linear-gradient(
-      135deg, 
-      rgba(66, 184, 131, 0.4), 
+      135deg,
+      rgba(66, 184, 131, 0.4),
       rgba(52, 168, 250, 0.4)
     ) border-box;
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) padding-box, 
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;

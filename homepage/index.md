@@ -3,20 +3,20 @@ layout: home
 
 hero:
   name: "MC++ Community"
-  text: "现代C++爱好者社区"
-  tagline: 现代C++库开发维护、开源文化、技术交流
+  text: "现代 C++ 爱好者社区"
+  tagline: 现代 C++ 库开发维护、开源文化、技术交流
   actions:
-    - theme: brand 
-      text: 👥 了解社区 -> 
+    - theme: brand
+      text: 👥 了解社区 ->
       link: /docs/base/intro.md
     - theme: alt
-      text: 🐙 Github
+      text: 🐙 GitHub
       link: https://github.com/mcpp-community
     - theme: alt
       text: 💬 论坛
       link: https://forum.d2learn.org/category/20
     - theme: sponsor
-      text: ❤️ sponsor
+      text: ❤️ Sponsor
       link: /pages/sponsor.md
 ---
 
@@ -24,7 +24,7 @@ hero:
   :projects="[
     {
       name: 'd2mcpp',
-      description: '交互式现代C++入门教程, 现代C++特性与发展历程',
+      description: '交互式现代 C++ 入门教程，现代 C++ 特性与发展历程',
       link: 'https://github.com/mcpp-community/d2mcpp',
       tags: ['交互式', 'D2X', '教程'],
       status: 'active',
@@ -47,7 +47,7 @@ hero:
   ]"
 />
 
-<TeamShowcase 
+<TeamShowcase
   :coreTeam="[
     {
       name: 'Sunrisepeak',
@@ -231,6 +231,6 @@ hero:
   ]"
 />
 
-<ContributorsWall 
+<ContributorsWall
   imageUrl="https://raw.githubusercontent.com/mcpp-community/.github/refs/heads/main/.thanks-contributors/contributors.png"
 />

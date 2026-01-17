@@ -147,7 +147,8 @@ const statusText = (s?: 'active' | 'incubating' | 'wip') => {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 10px;
+  padding: 2px 10px;
+  margin-bottom: 6px;
   border-radius: 999px;
   font-size: 0.85rem;
   font-weight: 700;
