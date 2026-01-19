@@ -21,7 +21,7 @@
 ::: tip
 
 - [members](https://github.com/orgs/mcpp-community/teams/members): 开放Org的Member申请渠道, 增强社区成员归属感, 并开放部分Private/预研项目权限, 方便社区成员参与项目
-  - 不管你是开发者还是爱好者或是对mcpp社区的发展和运营感兴趣都可以进行申请
+  - 不管你是开发者, 还是爱好者, 或是对mcpp社区的发展和运营感兴趣, 都可以进行申请
   - [members 申请](https://github.com/mcpp-community/members/issues/new?template=join-members.yml)
 
 :::
