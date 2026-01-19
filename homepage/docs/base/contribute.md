@@ -4,7 +4,7 @@
 
 > 积极参与讨论, 帮助社区用户解决问题, 分享/发布C++相关的文章
 
-- [mcpp社区论坛](http://localhost:5173/forum)
+- [mcpp社区论坛](https://forum.d2learn.org/category/20)
 
 ## 处理社区任务
 
