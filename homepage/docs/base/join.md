@@ -17,17 +17,26 @@
 
 - [参与讨论](https://forum.d2learn.org/category/20)
 - 即时交流群(Q): 1067245099
-- [members](https://github.com/orgs/mcpp-community/teams/members): TODO(准备中) - 开放Org的Member申请渠道, 增强社区成员归属感, 并开放部分Private/预研项目权限
+
+::: tip
+
+- [members](https://github.com/orgs/mcpp-community/teams/members): 开放Org的Member申请渠道, 增强社区成员归属感, 并开放部分Private/预研项目权限, 方便社区成员参与项目
+  - 不管你是开发者, 还是爱好者, 或是对mcpp社区的发展和运营感兴趣, 都可以进行申请
+  - [members 申请](https://github.com/mcpp-community/members/issues/new?template=join-members.yml)
+
+:::
 
 ### 社区贡献者
 
-> 参与过社区项目贡献或捐赠的成员
+> 参与过社区项目贡献或捐赠的成员 - [Contributors](https://github.com/mcpp-community/.github)
 
-- [Contributors](https://github.com/mcpp-community/.github)
+- [赞助社区](/pages/sponsor.md)
+- [参与社区任务处理](https://github.com/orgs/mcpp-community/projects/3)
 
 ### 社区团队成员
 
 > 社区CoreTeam和VTeam中的成员, 需要完成一些社区分配的任务并参与双周会的讨论
 
-- [CoreTeam](https://github.com/orgs/mcpp-community/teams/coreteam)
-- [VTeam](https://github.com/orgs/mcpp-community/teams/vteam)
+- [申请加入VTeam](https://github.com/mcpp-community/members/issues/new?template=join-vteam.yml)
+
+

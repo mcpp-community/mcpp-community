@@ -57,6 +57,7 @@ export default defineConfig({
           items: [
             { text: '认识', link: '/docs/base/intro.md' },
             { text: '新手教程', link: '/docs/base/quick-start.md' },
+            { text: '参与社区', link: '/docs/base/contribute.md' },
             { text: '加入社区', link: '/docs/base/join.md' },
             { text: '常见问题', link: '/docs/base/qa.md' },
           ]
