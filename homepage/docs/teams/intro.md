@@ -38,7 +38,7 @@
 | --- | --- | --- | --- | --- |
 | `owner` | `admin` | 项目负责人 - 对项目开发和发展负责 | CoreTeam成员 | 一个项目1～2个 |
 | `maintainer` | `maintain` | 项目核心模块维护者 | VTeam/CoreTeam成员 | CoreTeam成员默认有所有仓库`maintain`权限 |
-| `committer` | `write` | 参与社区事物处理, 有部分仓库PR合入权限 | VTeam成员 | |
+| `committer` | `write` | 参与社区事务处理, 有部分仓库PR合入权限 | VTeam成员 | |
 | `triager` | `triage` | 活跃的外部贡献者 | | `Outside collaborators` |
 | `contributor` | `N/A` | 社区贡献者(代码、文档...) | | |
 
