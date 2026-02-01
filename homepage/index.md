@@ -38,6 +38,27 @@ hero:
       status: 'wip'
     },
     {
+      name: 'mcpp-style-ref',
+      description: 'Modern/Module C++ Style Reference | 现代C++编码/项目风格参考',
+      link: 'https://github.com/mcpp-community/mcpp-style-ref',
+      tags: ['文档', '编码风格', '模块化'],
+      status: 'incubating'
+    },
+    {
+      name: 'members',
+      description: 'mcpp社区成员和开发者申请工具',
+      link: 'https://github.com/mcpp-community/members',
+      tags: ['工具', '社区', '开发者', '团队'],
+      status: 'wip'
+    },
+    {
+      name: 'd2mystl',
+      description: '从零实现一个迷你STL库',
+      link: 'https://github.com/mcpp-community/d2mystl',
+      tags: ['教程', '标准库', 'STL'],
+      status: 'incubating'
+    },
+    {
       name: 'mcpp-community',
       description: '社区官网与内容建设，展示项目、团队和最新动态',
       link: 'https://github.com/mcpp-community/mcpp-community',
@@ -90,8 +111,9 @@ hero:
       avatar: 'mcpp-logo.png',
       bio: '快来加入我们吧...',
       projects: [
-        { name: 'd2mcpp - 交互式现代C++入门教程', link: 'https://github.com/mcpp-community/d2mcpp' },
-        { name: 'mcpplibs - 现代C++库集合', link: 'https://github.com/mcpplibs' },
+        { name: '注册社区论坛', link: 'https://forum.d2learn.org/category/20' },
+        { name: '申请社区开发者', link: 'https://github.com/mcpp-community/members' },
+        { name: '加入社区群组(Q:1067245099)', link: 'https://qm.qq.com/q/2QTJFidsOk' },
       ],
       github: 'https://github.com/mcpp-community',
       bilibili: 'https://space.bilibili.com/3493107582633996',
@@ -102,31 +124,24 @@ hero:
       avatar: 'mcpp-logo.png',
       bio: '快来加入我们吧...',
       projects: [
-        { name: 'd2mcpp - 交互式现代C++入门教程', link: 'https://github.com/mcpp-community/d2mcpp' },
-        { name: 'mcpplibs - 现代C++库集合', link: 'https://github.com/mcpplibs' },
+        { name: '注册社区论坛', link: 'https://forum.d2learn.org/category/20' },
+        { name: '申请社区开发者', link: 'https://github.com/mcpp-community/members' },
+        { name: '加入社区群组(Q:1067245099)', link: 'https://qm.qq.com/q/2QTJFidsOk' },
       ],
       github: 'https://github.com/mcpp-community',
       bilibili: 'https://space.bilibili.com/3493107582633996',
       sponsor: 'https://github.com/mcpp-community'
-    }
+    },
   ]"
   :vTeam="[
     {
-      name: 'V Team Member 1',
+      name: '欢迎加入',
       avatar: 'mcpp-logo.png',
-      bio: 'V团队成员',
+      bio: '快来加入我们吧...',
       projects: [
-        { name: 'mcpplibs - 现代C++库集合', link: 'https://github.com/mcpplibs' },
-      ],
-      github: 'https://github.com/mcpp-community',
-      sponsor: 'https://github.com/mcpp-community'
-    },
-    {
-      name: 'V Team Member 2',
-      avatar: 'mcpp-logo.png',
-      bio: 'V团队成员',
-      projects: [
-        { name: 'd2mcpp - 交互式现代C++入门教程', link: 'https://github.com/mcpp-community/d2mcpp' },
+        { name: '注册社区论坛', link: 'https://forum.d2learn.org/category/20' },
+        { name: '申请社区开发者', link: 'https://github.com/mcpp-community/members' },
+        { name: '加入社区群组(Q:1067245099)', link: 'https://qm.qq.com/q/2QTJFidsOk' },
       ],
       github: 'https://github.com/mcpp-community',
       bilibili: 'https://space.bilibili.com/3493107582633996',
@@ -137,8 +152,9 @@ hero:
       avatar: 'mcpp-logo.png',
       bio: '快来加入我们吧...',
       projects: [
-        { name: 'd2mcpp - 交互式现代C++入门教程', link: 'https://github.com/mcpp-community/d2mcpp' },
-        { name: 'mcpplibs - 现代C++库集合', link: 'https://github.com/mcpplibs' },
+        { name: '注册社区论坛', link: 'https://forum.d2learn.org/category/20' },
+        { name: '申请社区开发者', link: 'https://github.com/mcpp-community/members' },
+        { name: '加入社区群组(Q:1067245099)', link: 'https://qm.qq.com/q/2QTJFidsOk' },
       ],
       github: 'https://github.com/mcpp-community',
       bilibili: 'https://space.bilibili.com/3493107582633996',
@@ -149,8 +165,9 @@ hero:
       avatar: 'mcpp-logo.png',
       bio: '快来加入我们吧...',
       projects: [
-        { name: 'd2mcpp - 交互式现代C++入门教程', link: 'https://github.com/mcpp-community/d2mcpp' },
-        { name: 'mcpplibs - 现代C++库集合', link: 'https://github.com/mcpplibs' },
+        { name: '注册社区论坛', link: 'https://forum.d2learn.org/category/20' },
+        { name: '申请社区开发者', link: 'https://github.com/mcpp-community/members' },
+        { name: '加入社区群组(Q:1067245099)', link: 'https://qm.qq.com/q/2QTJFidsOk' },
       ],
       github: 'https://github.com/mcpp-community',
       bilibili: 'https://space.bilibili.com/3493107582633996',
@@ -161,8 +178,9 @@ hero:
       avatar: 'mcpp-logo.png',
       bio: '快来加入我们吧...',
       projects: [
-        { name: 'd2mcpp - 交互式现代C++入门教程', link: 'https://github.com/mcpp-community/d2mcpp' },
-        { name: 'mcpplibs - 现代C++库集合', link: 'https://github.com/mcpplibs' },
+        { name: '注册社区论坛', link: 'https://forum.d2learn.org/category/20' },
+        { name: '申请社区开发者', link: 'https://github.com/mcpp-community/members' },
+        { name: '加入社区群组(Q:1067245099)', link: 'https://qm.qq.com/q/2QTJFidsOk' },
       ],
       github: 'https://github.com/mcpp-community',
       bilibili: 'https://space.bilibili.com/3493107582633996',
@@ -173,8 +191,9 @@ hero:
       avatar: 'mcpp-logo.png',
       bio: '快来加入我们吧...',
       projects: [
-        { name: 'd2mcpp - 交互式现代C++入门教程', link: 'https://github.com/mcpp-community/d2mcpp' },
-        { name: 'mcpplibs - 现代C++库集合', link: 'https://github.com/mcpplibs' },
+        { name: '注册社区论坛', link: 'https://forum.d2learn.org/category/20' },
+        { name: '申请社区开发者', link: 'https://github.com/mcpp-community/members' },
+        { name: '加入社区群组(Q:1067245099)', link: 'https://qm.qq.com/q/2QTJFidsOk' },
       ],
       github: 'https://github.com/mcpp-community',
       bilibili: 'https://space.bilibili.com/3493107582633996',
@@ -185,8 +204,9 @@ hero:
       avatar: 'mcpp-logo.png',
       bio: '快来加入我们吧...',
       projects: [
-        { name: 'd2mcpp - 交互式现代C++入门教程', link: 'https://github.com/mcpp-community/d2mcpp' },
-        { name: 'mcpplibs - 现代C++库集合', link: 'https://github.com/mcpplibs' },
+        { name: '注册社区论坛', link: 'https://forum.d2learn.org/category/20' },
+        { name: '申请社区开发者', link: 'https://github.com/mcpp-community/members' },
+        { name: '加入社区群组(Q:1067245099)', link: 'https://qm.qq.com/q/2QTJFidsOk' },
       ],
       github: 'https://github.com/mcpp-community',
       bilibili: 'https://space.bilibili.com/3493107582633996',
@@ -197,8 +217,9 @@ hero:
       avatar: 'mcpp-logo.png',
       bio: '快来加入我们吧...',
       projects: [
-        { name: 'd2mcpp - 交互式现代C++入门教程', link: 'https://github.com/mcpp-community/d2mcpp' },
-        { name: 'mcpplibs - 现代C++库集合', link: 'https://github.com/mcpplibs' },
+        { name: '注册社区论坛', link: 'https://forum.d2learn.org/category/20' },
+        { name: '申请社区开发者', link: 'https://github.com/mcpp-community/members' },
+        { name: '加入社区群组(Q:1067245099)', link: 'https://qm.qq.com/q/2QTJFidsOk' },
       ],
       github: 'https://github.com/mcpp-community',
       bilibili: 'https://space.bilibili.com/3493107582633996',
@@ -209,8 +230,9 @@ hero:
       avatar: 'mcpp-logo.png',
       bio: '快来加入我们吧...',
       projects: [
-        { name: 'd2mcpp - 交互式现代C++入门教程', link: 'https://github.com/mcpp-community/d2mcpp' },
-        { name: 'mcpplibs - 现代C++库集合', link: 'https://github.com/mcpplibs' },
+        { name: '注册社区论坛', link: 'https://forum.d2learn.org/category/20' },
+        { name: '申请社区开发者', link: 'https://github.com/mcpp-community/members' },
+        { name: '加入社区群组(Q:1067245099)', link: 'https://qm.qq.com/q/2QTJFidsOk' },
       ],
       github: 'https://github.com/mcpp-community',
       bilibili: 'https://space.bilibili.com/3493107582633996',
@@ -221,8 +243,22 @@ hero:
       avatar: 'mcpp-logo.png',
       bio: '快来加入我们吧...',
       projects: [
-        { name: 'd2mcpp - 交互式现代C++入门教程', link: 'https://github.com/mcpp-community/d2mcpp' },
-        { name: 'mcpplibs - 现代C++库集合', link: 'https://github.com/mcpplibs' },
+        { name: '注册社区论坛', link: 'https://forum.d2learn.org/category/20' },
+        { name: '申请社区开发者', link: 'https://github.com/mcpp-community/members' },
+        { name: '加入社区群组(Q:1067245099)', link: 'https://qm.qq.com/q/2QTJFidsOk' },
+      ],
+      github: 'https://github.com/mcpp-community',
+      bilibili: 'https://space.bilibili.com/3493107582633996',
+      sponsor: 'https://github.com/mcpp-community'
+    },
+    {
+      name: '欢迎加入',
+      avatar: 'mcpp-logo.png',
+      bio: '快来加入我们吧...',
+      projects: [
+        { name: '注册社区论坛', link: 'https://forum.d2learn.org/category/20' },
+        { name: '申请社区开发者', link: 'https://github.com/mcpp-community/members' },
+        { name: '加入社区群组(Q:1067245099)', link: 'https://qm.qq.com/q/2QTJFidsOk' },
       ],
       github: 'https://github.com/mcpp-community',
       bilibili: 'https://space.bilibili.com/3493107582633996',

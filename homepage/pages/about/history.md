@@ -16,6 +16,20 @@ const historyEvents = [
     description: '目标: MCPP社区完成从0到1的过程 - 实现可持续发展, 作为墨伽(MOGA)成功案例'
   },
   {
+    time: '2026-01',
+    description: '>> 影响力5W+, 社区成员50+, 论坛讨论帖30+, 社区项目8+, 1400+Star, 贡献者9 <<'
+  },
+  {
+    time: '2026-01-27',
+    description: 'mcpp-style-ref项目发布: 现代C++编码/项目风格参考',
+    link: 'https://github.com/mcpp-community/mcpp-style-ref',
+  },
+  {
+    time: '2026-01-19',
+    description: '开发members项目, 完善文档并实现自动化处理社区成员/团队申请(自动邀请)',
+    link: 'https://github.com/mcpp-community/members',
+  },
+  {
     time: '2026-01-10',
     description: 'CT-002加入, 社区团队(3人)进行第0次线上双周会',
   },
@@ -98,7 +112,7 @@ const historyEvents = [
   .history-title {
     font-size: 1.6rem;
   }
-  
+
   .history-text {
     font-size: 1.1rem;
   }

@@ -48,6 +48,33 @@ layout: page
       url: 'https://forum.d2learn.org/category/20',
       status: 'active',
       category: 'application'
+    },
+    {
+      id: 'd2mystl',
+      title: 'd2mystl',
+      description: '从零实现一个迷你STL库',
+      tags: ['教程', '标准库', 'STL'],
+      url: 'https://github.com/mcpp-community/d2mystl',
+      status: 'incubating',
+      category: 'tutorial'
+    },
+    {
+      id: 'mcpp-style-ref',
+      title: 'mcpp-style-ref',
+      description: 'Modern/Module C++ Style Reference | 现代C++编码/项目风格参考',
+      tags: ['文档', '编码风格', '模块化'],
+      url: 'https://github.com/mcpp-community/mcpp-style-ref',
+      status: 'incubating',
+      category: 'documentation'
+    },
+    {
+      id: 'members',
+      title: 'members',
+      description: 'mcpp社区成员和开发者申请工具',
+      tags: ['工具', '社区', '开发者', '团队'],
+      url: 'https://github.com/mcpp-community/members',
+      status: 'active',
+      category: 'application'
     }
   ]"
 />
