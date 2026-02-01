@@ -50,7 +50,7 @@ export default defineConfig({
       { text: '❤️ 赞助', link: '/pages/sponsor.md' },
     ],
     sidebar: {
-      '/docs' : [
+      '/docs/' : [
         {
           text: '了解社区',
           collapsed: false,
