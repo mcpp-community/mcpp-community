@@ -31,7 +31,7 @@
 ## 2.参与社区项目
 
 ### `2.0-处理社区中的问题`
-  - 一般为论坛有中问题类型的贴子(标识为 `未解决`) - [论坛](https://forum.d2learn.org/topic/144)
+  - 一般为论坛中有问题类型的贴子(标识为 `未解决`) - [论坛](https://forum.d2learn.org/topic/144)
   - [社区公开任务发布面板](https://github.com/orgs/mcpp-community/projects/3)
 
 ### `2.1-参与项目开发`
