@@ -11,11 +11,11 @@
           </label>
           <label class="filter-item">
             <input type="checkbox" v-model="selectedStatuses" value="wip" />
-            <span>进行中</span>
+            <span>进行</span>
           </label>
           <label class="filter-item">
             <input type="checkbox" v-model="selectedStatuses" value="incubating" />
-            <span>孵化中</span>
+            <span>孵化</span>
           </label>
         </div>
       </div>
@@ -121,8 +121,8 @@ const selectedCategories = ref<string[]>([])
 
 const statusText = {
   active: '活跃',
-  wip: '进行中',
-  incubating: '孵化中'
+  wip: '进行',
+  incubating: '孵化'
 }
 
 const projectType = (tags?: string[]) => {
@@ -136,10 +136,10 @@ const filteredProjects = computed(() => {
   return props.projects.filter(project => {
     // 状态过滤
     const statusMatch = selectedStatuses.value.length === 0 || (project.status ? selectedStatuses.value.includes(project.status) : true)
-    
+
     // 类型过滤
     const categoryMatch = selectedCategories.value.length === 0 || (project.category ? selectedCategories.value.includes(project.category) : true)
-    
+
     // 搜索过滤
     let searchMatch = true
     if (searchQuery.value.trim()) {

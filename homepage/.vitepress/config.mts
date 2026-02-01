@@ -50,7 +50,7 @@ export default defineConfig({
       { text: '❤️ 赞助', link: '/pages/sponsor.md' },
     ],
     sidebar: {
-      '/docs/' : [
+      '/docs' : [
         {
           text: '了解社区',
           collapsed: false,
@@ -60,6 +60,17 @@ export default defineConfig({
             { text: '参与社区', link: '/docs/base/contribute.md' },
             { text: '加入社区', link: '/docs/base/join.md' },
             { text: '常见问题', link: '/docs/base/qa.md' },
+          ]
+        },
+        {
+          text: '社区团队',
+          collapsed: false,
+          items: [
+            { text: '简介', link: '/docs/teams/intro.md' },
+            { text: '志愿者团队', link: '/docs/teams/vteam.md' },
+            { text: '核心团队', link: '/docs/teams/coreteam.md' },
+            { text: '预加入机制', link: '/docs/teams/pre-join.md' },
+            { text: '团队成员权限', link: '/docs/teams/privileges.md' },
           ]
         },
       ],

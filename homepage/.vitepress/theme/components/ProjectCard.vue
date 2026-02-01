@@ -77,8 +77,8 @@ const { title, description, url, tags, status, highlight, typeClass, fullLink, c
 
 const statusText = (s?: 'active' | 'incubating' | 'wip') => {
   if (s === 'active') return '活跃'
-  if (s === 'incubating') return '孵化中'
-  if (s === 'wip') return '进行中'
+  if (s === 'incubating') return '孵化'
+  if (s === 'wip') return '进行'
   return ''
 }
 </script>

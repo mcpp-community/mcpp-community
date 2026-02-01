@@ -39,8 +39,8 @@ const props = defineProps<{ projects: Project[] }>()
 
 const statusText = (status?: Project['status']) => {
   if (status === 'active') return '活跃'
-  if (status === 'incubating') return '孵化中'
-  if (status === 'wip') return '进行中'
+  if (status === 'incubating') return '孵化'
+  if (status === 'wip') return '进行'
   return ''
 }
 
